@@ -43,7 +43,7 @@ struct Line {
     }
 
     bool parallel(const Line& other) const {
-        return eq(this->A * other.B, this->B * other.A) && this->C != other.C;
+        return eq(this->A * other.A, this->B * other.B) && this->C != other.C;
     }
 
     Line parallel(const Point& p) {
